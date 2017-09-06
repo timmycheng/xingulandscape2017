@@ -4,23 +4,22 @@ block content
         #banner.row
             #banner-slide
                 ul
-                    li: img.img-responsive.center-block(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner1.jpg")
-                    li: img.img-responsive.center-block(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner2.jpg")
-                    li: img.img-responsive.center-block(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner3.jpg")
-                    li: img.img-responsive.center-block(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner4.jpg")
-                    //- li: img(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner1.jpg")
-                    //- li: img(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner2.jpg")
-                    //- li: img(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner3.jpg")
-                    //- li: img(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner4.jpg")
+                    li: img#banner1.img-responsive.center-block(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner1.jpg")
+                    li: img#banner2.img-responsive.center-block(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner2.jpg")
+                    li: img#banner3.img-responsive.center-block(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner3.jpg")
+                    li: img#banner4.img-responsive.center-block(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner4.jpg")
         #portfolio.row
-            h2.row-title PORTFOLIO
-            a.thumbnail(href='#')
-                img(src="http://xingu-1251622208.picsh.myqcloud.com/portfolio/0001.jpg")
+            .inner
+                h2.row-title PORTFOLIO
+                a.thumbnail(href='#')
+                    img(src="http://xingu-1251622208.picsh.myqcloud.com/portfolio/0001.jpg")
         #flowers.row
-            h2.row-title FLOWERS
-            a.thumbnail(href='#')
-                img(src="http://xingu-1251622208.picsh.myqcloud.com/flowers/IMG_3490.JPG")
+            .inner
+                h2.row-title FLOWERS
+                a.thumbnail(href='#')
+                    img(src="http://xingu-1251622208.picsh.myqcloud.com/flowers/IMG_3490.JPG")
         #photos.row
-            h2.row-title PHOTOS
+            .inner
+                h2.row-title PHOTOS
     script(src="/js/index.js")
             

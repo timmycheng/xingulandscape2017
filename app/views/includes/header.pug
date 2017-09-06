@@ -5,7 +5,7 @@
             span.icon-bar
             span.icon-bar
             span.icon-bar
-        a.navbar-brand(href='/'): strong Xingu Landscape
+        a.navbar-brand(href='/'): strong #{title}
         .btn-group.pull-right
             if typeof(user) !== 'undefined'
                 button.btn.btn-default.dropdown-toggle(data-toggle='dropdown')
@@ -16,6 +16,22 @@
                     li: a(href='#') 后台
                     li: a(href='/logout') 登出
             else
-                button.btn.btn-default.navbar-btn(type='button', href='/login')
+                button.btn.btn-default.navbar-btn.hidden(type='button', href='#', data-toggle="modal", data-target="#loginModal")
                     i.glyphicon.glyphicon-flash
                     span.hidden-sm.hidden-xs 登录
+#loginModal.modal.fade
+    .modal-dialog
+        .modal-content
+            form(method="POST", action="/login")
+                .modal-header Login
+                .modal-body
+                    .form-group
+                        label(for="username") username
+                        input#username.form-control(name='username', type="text")
+                    .form-group
+                        label(for="password") password
+                        input#password.form-control(name="password", type="password")
+                .modal-footer
+                    button.btn.btn-default(type="button", data-dismiss="modal") close
+                    button.btn.btn-success(type="submit") submit
+                    

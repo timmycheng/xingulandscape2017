@@ -1,4 +1,6 @@
 var Index = require('../controllers/index')
+var User = require('../controllers/user')
+var Photo = require('../controllers/photo')
 
 module.exports = function(app){
     app.use(function(req, res, next){
@@ -15,4 +17,10 @@ module.exports = function(app){
 
     // ROUTES
     app.get('/', Index.index)
+    app.get('/portfolio', Index.portf)
+    app.get('/flowers/:id', Index.flower)
+    // app.get('/login', User.showLogin)
+    app.post('/login', User.login)
+    app.post('/photo', Photo.upLoad)
+    app.get('/photo/new', Photo.new)
 }

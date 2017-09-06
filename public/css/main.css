@@ -6,7 +6,7 @@
     z-index: 1030;
 }
 .navbar-brand{
-    color: white!important;
+    /* color: white!important; */
     letter-spacing: -2px;
     text-shadow: 5px 5px 10px grey;
     font-size: 3.5rem;
@@ -16,4 +16,29 @@
     letter-spacing: 2px;
     color: #777;
     background-color: transparent;
+}
+.row-title{
+    /* display: block; */
+    text-align: center;
+}
+.link-group{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.link-group>li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.link-group>li:first-child{
+    margin-left: 0;
+}
+.link-group>li>a{
+    color: black;
+}
+.inner{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
