@@ -1,13 +1,23 @@
 extends ../layout
 block content
-    form(action="/photo", method="post")
-        .form-group
-            label(for="itemName") Name
-            input#itemName.form-control(type="text", name="itemName")
-        .form-group
-            label(for="itemTag") Tag
-            input#itemTag.form-control(type="text", name="itemTag")
-        .form-group
-            label(for="itemComment") Comment
-            textarea#itemComment(name="itemComment", cols="30", rows="10")
+    .container-fluid
+        #itemFormBlank.row
+        #itemForm.row
+            .inner
+                form.form-horizontal(action="/photo", method="post")
+                    .form-group
+                        label(for="itemName") Name
+                        input#itemName.form-control(type="text", name="itemName")
+                    .form-group
+                        label(for="itemTag") Tag
+                        input#itemTag.form-control(type="text", name="itemTag")
+                    .form-group
+                        label(for="itemComment") Comment
+                        textarea#itemComment.form-control(name="itemComment", cols="30", rows="10")
+                    .form-group
+                        label(for="itemPictures") Pics
+                        input#itemPictures(type="file", name="itemPictures")
+                    hr
+                    .form-group.pull-right
+                        button.btn.btn-default(type="submit") Submit
         

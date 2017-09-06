@@ -6,17 +6,17 @@
     z-index: 1030;
 }
 .navbar-brand{
-    /* color: white!important; */
+    /* color: black!important;  */
     letter-spacing: -2px;
     text-shadow: 5px 5px 10px grey;
     font-size: 3.5rem;
 }
-.navbar-btn{
+/* .navbar-btn{
     border: none;
     letter-spacing: 2px;
     color: #777;
     background-color: transparent;
-}
+} */
 .row-title{
     /* display: block; */
     text-align: center;
@@ -38,7 +38,10 @@
     color: black;
 }
 .inner{
-    text-align: center;
+    /* text-align: center; */
     width: 80%;
     margin: 0 auto;
+}
+#itemFormBlank{
+    height: 100px;
 }
