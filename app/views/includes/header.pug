@@ -1,0 +1,21 @@
+.navbar.navbar-default(role="navigation")
+    .navbar-inner
+        button.navbar-toggle.pull-left.animated.flip(type="button")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        a.navbar-brand(href='/'): strong Xingu Landscape
+        .btn-group.pull-right
+            if typeof(user) !== 'undefined'
+                button.btn.btn-default.dropdown-toggle(data-toggle='dropdown')
+                    i.glyphicon.glyphicon-user
+                    span.hidden-sm.hidden-xs #{user.nickname}
+                    span.caret
+                ul.dropdown-menu
+                    li: a(href='#') 后台
+                    li: a(href='/logout') 登出
+            else
+                button.btn.btn-default.navbar-btn(type='button', href='/login')
+                    i.glyphicon.glyphicon-flash
+                    span.hidden-sm.hidden-xs 登录
