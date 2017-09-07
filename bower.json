@@ -21,6 +21,7 @@
     "isotope": "^3.0.4",
     "unslider": "^2.0.3",
     "jquery-mousewheel": "^3.1.13",
-    "bootstrap-fileinput": "^4.4.3"
+    "bootstrap-fileinput": "^4.4.3",
+    "font-awesome": "^4.7.0"
   }
 }

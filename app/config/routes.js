@@ -1,6 +1,7 @@
 var Index = require('../controllers/index')
 var User = require('../controllers/user')
 var Photo = require('../controllers/photo')
+var Item = require('../controllers/item')
 
 module.exports = function(app){
     app.use(function(req, res, next){
@@ -22,5 +23,6 @@ module.exports = function(app){
     // app.get('/login', User.showLogin)
     app.post('/login', User.login)
     app.post('/photo', Photo.upLoad)
-    app.get('/photo/new', Photo.new)
+    app.get('/item/new', Item.new)
+    app.post('/item', Item.save)
 }

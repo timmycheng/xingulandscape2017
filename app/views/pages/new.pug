@@ -4,20 +4,21 @@ block content
         #itemFormBlank.row
         #itemForm.row
             .inner
-                form.form-horizontal(action="/photo", method="post")
+                form.form-horizontal(action="/item", method="post", enctype="multipart/form-data")
                     .form-group
                         label(for="itemName") Name
-                        input#itemName.form-control(type="text", name="itemName")
+                        input#itemName.form-control(type="text", name="item[name]")
                     .form-group
                         label(for="itemTag") Tag
-                        input#itemTag.form-control(type="text", name="itemTag")
+                        input#itemTag.form-control(type="text", name="item[tag]")
                     .form-group
                         label(for="itemComment") Comment
-                        textarea#itemComment.form-control(name="itemComment", cols="30", rows="10")
+                        textarea#itemComment.form-control(name="item[comment]", cols="30", rows="10")
                     .form-group
                         label(for="itemPictures") Pics
-                        input#itemPictures.file-loading(multiple, type="file", name="itemPictures[]", accept="image/*")
+                        input#itemPictures.file-loading(multiple, type="file", name="pics[]", accept="image/*")
                     hr
                     .form-group.pull-right
-                        button.btn.btn-default(type="submit") Submit
+                        button#picup.btn.btn-default(type="button") upload
+                        button#itemSubmit.btn.btn-default(type="submit") Submit
     script(src="/js/new.js")    

@@ -1,4 +1,5 @@
 var mongoose = require('mongoose')
+var Schema = mongoose.Schema
 var ObjectId = Schema.Types.ObjectId
 var ItemSchema = new mongoose.Schema({
     name: String,
