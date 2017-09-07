@@ -16,8 +16,8 @@ block content
                         textarea#itemComment.form-control(name="itemComment", cols="30", rows="10")
                     .form-group
                         label(for="itemPictures") Pics
-                        input#itemPictures(type="file", name="itemPictures")
+                        input#itemPictures.file-loading(multiple, type="file", name="itemPictures[]", accept="image/*")
                     hr
                     .form-group.pull-right
                         button.btn.btn-default(type="submit") Submit
-        
+    script(src="/js/new.js")    

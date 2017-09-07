@@ -13,6 +13,7 @@ $(function(){
         speed: 500,
         delay: 5000,
     })
+
     // console.log($(window).height())
     // console.log($(window).width())
 })
