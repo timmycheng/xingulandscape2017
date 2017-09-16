@@ -1,0 +1,42 @@
+extends ../layout
+block content
+    .container-fluid
+        #banner.row
+            #banner-slide
+                ul
+                    li: img#banner1.img-responsive.center-block(src="#")
+                    li: img#banner2.img-responsive.center-block(src="#")
+                    li: img#banner3.img-responsive.center-block(src="#")
+                    li: img#banner4.img-responsive.center-block(src="#")
+        #portfolio.row
+            .inner
+                h2.row-title PORTFOLIO
+                a.thumbnail(href='#')
+                    img(src="http://xingu-1251622208.picsh.myqcloud.com/portfolio/0001.jpg")
+        #flowers.row
+            .inner
+                h2.row-title FLOWERS
+                a.thumbnail(href='#')
+                    img(src="http://xingu-1251622208.picsh.myqcloud.com/flowers/IMG_3490.JPG")
+        #photos.row
+            .inner
+                h2.row-title PHOTOS
+    //- #fullpage
+    //-     .section
+    //-         h1#title.row-title #{title}
+    //-         .slide: img(data-src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner1.jpg?imageView2/1/w/1366/h/634")
+    //-         .slide: img(data-src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner2.jpg?imageView2/1/w/1366/h/634")
+    //-         .slide: img(data-src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner3.jpg?imageView2/1/w/1366/h/634")
+    //-         .slide: img(data-src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner4.jpg?imageView2/1/w/1366/h/634")
+    //-     .section
+    //-         //- h1 portfolio
+    //-         //- img(src="http://xingu-1251622208.picsh.myqcloud.com/portfolio/0001.jpg?imageView2/1/w/1366/h/634")
+    //-         //- .inner
+    //-         //-     img(src="http://xingu-1251622208.picsh.myqcloud.com/portfolio/0001.jpg?imageView2/2/w/1366/h/634")
+    //-         h2 PORTFOLIO
+    //-     .section
+    //-         h2 FLOWERS
+    //-     .section
+    //-         h2 PHOTOS
+            
+    script(src="/js/index.js")
