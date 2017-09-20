@@ -9,31 +9,20 @@ block content
             .slide: img(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner3.jpg?imageView2/1/w/1366/h/634")
             .slide: img(src="http://xingu-1251622208.picsh.myqcloud.com/banner/banner4.jpg?imageView2/1/w/1366/h/634")
         .section
-            #portfolio.row.inner
-                //- .inner
-                h2.row-title PORTFOLIO
-                a.thumbnail(href="#")
-                    img(src="http://xingu-1251622208.picsh.myqcloud.com/portfolio/0001.jpg")
-            #photos.row.inner
-                //- .inner
-                h2.row-title PHOTOS
-                .grid
-                    .grid-sizer
-                    .grid-item
-                        //- p: one
-                        a.thumbnail(href="#") 
-                            img(src="http://xingu-1251622208.picsh.myqcloud.com/photos/Chinese valentine/IMG_3495.JPG")
-                    .grid-item.grid-item-x2
-                        //- p: one
-                        a.thumbnail(href="#")
-                            img(src="http://xingu-1251622208.picsh.myqcloud.com/photos/Chinese valentine/IMG_3495.JPG")
-            #flowers.row.inner
-                //- .inner
-                h2.row-title FLOWERS
-                a.thumbnail(href="#")
-                    img(src="http://xingu-1251622208.picsh.myqcloud.com/flowers/IMG_3490.JPG")
-            #footer.row
-                include ../includes/footer
+            .container-fluid
+                #portfolio.row
+                    h2.row-title PORTFOLIO
+                    a.thumbnail(href="#")
+                        img(src="http://xingu-1251622208.picsh.myqcloud.com/portfolio/0001.jpg?imageView2/1/w/1366/h/634")
+                #photos.row
+                    h2.row-title PHOTOS
+                    
+                #flowers.row
+                    h2.row-title FLOWERS
+                    a.thumbnail(href="#")
+                        img(src="http://xingu-1251622208.picsh.myqcloud.com/flowers/IMG_3490.JPG")
+                #footer.row
+                    include ../includes/footer
         //- #banner.row
         //-     #banner-slide
         //-         ul

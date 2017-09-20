@@ -1,3 +1,4 @@
+/* nav */
 .navbar{
     background-color: transparent;
     border: none;
@@ -11,21 +12,18 @@
     text-shadow: 5px 5px 10px grey;
     font-size: 3.5rem;
 }
-/* .navbar-btn{
-    border: none;
-    letter-spacing: 2px;
-    color: #777;
-    background-color: transparent;
-} */
+
 .row-title{
-    /* display: block; */
     text-align: center;
 }
+
+/* footer */
 .link-group{
     list-style: none;
     margin: 0 auto;
     padding: 0;
 }
+
 .link-group>li{
     display: inline-block;
     margin-left: 20px;
@@ -53,14 +51,16 @@
     font-size: 3.5rem;
     color: white;
 }
+
+/* photos */
 .grid-sizer, 
 .grid-item{
     position: relative;
     float: left;
     width: 25%;
     /* background-color: #BE2626; */
-
 }
+
 .grid-item-x2{
     width: 50%;
     /* background-color: #333; */
