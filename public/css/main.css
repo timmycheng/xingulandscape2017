@@ -58,7 +58,9 @@
     position: relative;
     float: left;
     width: 25%;
-    /* background-color: #BE2626; */
+}
+.grid-item> a> img{
+    width: 100%;
 }
 
 .grid-item-x2{
@@ -67,9 +69,4 @@
 }
 .grid-item-x3{
     width: 75%;
-}
-.grid:after{
-    content: '';
-    display: block;
-    clear: both;
 }

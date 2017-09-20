@@ -30,16 +30,20 @@ $(function(){
         scrollOverflow: true,
     })
 
-    var $grid = $('.grid').isotope({
-        itemSelector: '.grid-item',
-        // layoutMode: 'fitRows',
-        percentPostion: true,
-        masonry: {
-            columnWidth: '.grid-sizer'
-        }
-    })
-    $grid.imagesLoaded().progress(function(){
-        $grid.isotope('layout')
+    // var $grid = $('.grid').isotope({
+    //     itemSelector: '.grid-item',
+    //     // layoutMode: 'fitRows',
+    //     percentPostion: true,
+    //     masonry: {
+    //         columnWidth: '.grid-sizer'
+    //     }
+    // })
+    // $grid.imagesLoaded().progress(function(){
+    //     $grid.isotope('layout')
+    // })
+    $('.grid').isotope({
+        layoutMode: 'masonry',
+        // percentPostion: true,
     })
 
     setInterval(function(){
